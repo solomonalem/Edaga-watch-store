@@ -22,8 +22,11 @@ export default function Advertise() {
                   </h4>
 
                   <p>
-                    Best brand in the world you don't just see the time you see the world,you see future. Hold your future control your destiny 
-                    Best brand in the world you don't just see the time you see the world,you see future. Hold your future control your destiny 
+                    Best brand in the world you don't just see the time you see
+                    the world,you see future. Hold your future control your
+                    destiny Best brand in the world you don't just see the time
+                    you see the world,you see future. Hold your future control
+                    your destiny
                   </p>
                 </div>
               </ul>
@@ -62,7 +65,6 @@ const AdvertiseContainer = styled.div`
     text-align: center;
     word-spacing: 0.5rem;
   }
-
   #border {
     border-bottom: 2px solid #fff;
     position: absolute;
@@ -74,21 +76,24 @@ const AdvertiseContainer = styled.div`
     margin-right: 3rem;
     right: 36%;
   }
-
   .advertise p {
     color: white;
     padding: 1rem 4rem;
     text-align: center;
     font-family: "Philosopher";
   }
-  @media only screen and (max-width: 766px) {
+  @media only screen and (max-width: 780px) {
+    height: 160vh;
     .advertise {
-      height: 120vh;
+      height: 150vh;
       width: 100%;
       margin: 3rem 0;
     }
     .advertise ul {
       display: block;
+    }
+    .advertise img {
+      max-width: 20rem;
     }
     .advertise h4 {
       margin: 1rem 0;
@@ -106,7 +111,6 @@ const AdvertiseContainer = styled.div`
       display: none;
     }
   }
-
   @media only screen and (max-width: 507px) {
     .advertise {
       height: 200vh;
@@ -133,11 +137,9 @@ const AdvertiseContainer = styled.div`
     }
     .advertise img {
       font-size: 0.3rem !important;
-
       width: 80vw;
     }
   }
-
   @keyframes rotation {
     0% {
       transform: rotateY(0deg);
@@ -145,7 +147,6 @@ const AdvertiseContainer = styled.div`
     30% {
       transform: rotateY(45deg);
     }
-
     100% {
       transform: rotateY(0deg);
     }

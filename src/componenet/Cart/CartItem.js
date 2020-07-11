@@ -96,4 +96,9 @@ const CartItemContainer = styled.div`
     padding: 0.3rem 0;
     cursor: pointer;
   }
+  @media only screen and (max-width: 500px) {
+    .item-options {
+      padding-left: 3rem;
+    }
+  }
 `;

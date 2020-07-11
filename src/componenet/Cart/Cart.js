@@ -10,7 +10,7 @@ export default class Cart extends Component {
     return (
       <CartContainer>
         <Link to="/" className="back-to-btn">
-          <h6>&#8592; Back To Products</h6>
+          <h6>&#8592; Back </h6>
         </Link>
 
         <h4>SHOPPING CART</h4>
@@ -31,6 +31,9 @@ export default class Cart extends Component {
                 return (
                   <div className="empty-cart">
                     <h5>Your cart is empty</h5>
+                    <Link to="/">
+                      <h6> Shop </h6>
+                    </Link>
                   </div>
                 );
               }
@@ -71,9 +74,35 @@ const CartContainer = styled.section`
     padding: 4rem;
     margin-top: 10%;
   }
+  .empty-cart h6 {
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    margin: 2rem 40%;
+    padding: 0.5rem 0;
+    color: white !important;
+    background: black;
+  }
+  .empty-cart h6:hover {
+    opacity: 0.7;
+    text-decoration: none !important;
+  }
   h4 {
     text-align: center;
     font-weight: bold;
     margin-top: -2rem;
+  }
+  @media only screen and (max-width: 460px) {
+    .empty-cart h6 {
+      border: 1px solid black;
+      border-radius: 0.3rem;
+      margin: 2rem 10%;
+      padding: 0.5rem 0;
+    }
+    h4 {
+      text-align: center;
+      font-weight: none;
+      font-size: 1.2rem;
+      margin-top: -2rem;
+    }
   }
 `;
