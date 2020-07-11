@@ -3,7 +3,6 @@ import CartItem from "./CartItem";
 import styled from "styled-components";
 
 export default function CartList({ value }) {
-  console.log(value);
   return (
     <CartListContainer>
       {value.cart.map((item) => (
