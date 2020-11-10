@@ -1,4 +1,4 @@
-# Run Buddy, Inc
+# EDAGA WATCH-STORE
 
 ## Purpose
 
